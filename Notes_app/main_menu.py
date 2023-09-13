@@ -2,6 +2,7 @@
 from new_notes import new_notes
 from view_notes import view_notes
 from edit_note import edit_notes
+from delete_notes import delete_notes
 
 def main_menu():
     """
@@ -12,6 +13,7 @@ def main_menu():
     print("1.Take new notes")
     print("2.View existing notes")
     print("3.Edit the notes")
+    print("4.Delete the note file")
 
     Choice = input("Enter option:")
 
@@ -23,6 +25,9 @@ def main_menu():
 
     elif Choice == '3':
         edit_notes()
+
+    elif Choice == '4':
+        delete_notes()
 
     else:
         print("Invalid option")
